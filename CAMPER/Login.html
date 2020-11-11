@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>CAMPER STORE</title>
+    <title>CAMPER STORE | Login</title>
     <meta property="og:image" content="assets/img/logo.png">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/png" sizes="275x276" href="assets/img/logo.png">
@@ -22,50 +22,82 @@
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
 <body>
     <!-- Start: Navigation with Button -->
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="padding: 8px;">
-        <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/logo.png" style="width: 32px;height: 32px;margin: 0px 0px 14px 0px;">CAMPER STORE</a><button data-toggle="collapse" class="navbar-toggler text-center" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" style="width: 32px;height: 32px;margin: 0px 0px 14px 0px;">CAMPER STORE</a><button data-toggle="collapse" class="navbar-toggler text-center" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse text-center" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ | Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Trang Chủ | Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#">CAMPER | About us</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-center" data-toggle="dropdown" aria-expanded="false" href="#">Sản Phẩm | Shop</a>
                         <div class="dropdown-menu text-center"><a class="dropdown-item" href="#">Quần | Pants</a><a class="dropdown-item" href="#">Áo | Clothes</a><a class="dropdown-item" href="#">Giày Dép</a><a class="dropdown-item" href="#">Phụ Kiện | Accessories</a></div>
                     </li>
-                </ul><span class="navbar-text"><a href="#" style="padding: 8px;"><img src="assets/img/cart.png" style="width: 24px;"></a><a href="Login.html" style="padding: 8px;"><img src="assets/img/user.png" style="width: 24px;"></a></span></div>
+                </ul><span class="navbar-text"><a href="#" style="padding: 8px;"><img src="assets/img/cart.png" style="width: 24px;"></a><a href="Login.html    " style="padding: 8px;"><img src="assets/img/user.png" style="width: 24px;"></a></span></div>
         </div>
     </nav>
     <!-- End: Navigation with Button -->
     <!-- Start: Simple Slider -->
     <div class="text-center simple-slider">
         <!-- Start: Slideshow -->
-        <div class="swiper-container">
-            <!-- Start: Slide Wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Start: Slide -->
-                <div class="swiper-slide"><img src="assets/img/slide1.jpg"></div>
-                <!-- End: Slide -->
-                <!-- Start: Slide -->
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img src="assets/img/slide2.jpg"></div>
-                <!-- End: Slide -->
-                <!-- Start: Slide -->
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img src="assets/img/slide3.jpg"></div>
-                <!-- End: Slide -->
+        <div class="logins">
+            <div class="logins_title">
+                <h2>Đăng nhập</h2>
+                <p>Nếu bạn đã có tài khoản, đăng nhập tại đây</p>
             </div>
-            <!-- End: Slide Wrapper -->
-            <!-- Start: Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- End: Pagination -->
-            <!-- Start: Previous -->
-            <div class="swiper-button-prev"></div>
-            <!-- End: Previous -->
-            <!-- Start: Next -->
-            <div class="swiper-button-next"></div>
-            <!-- End: Next -->
+            <div class="logins_main">
+                <div class="login_col">
+                    <div class="login_main">
+                        <label>Email</label>
+                        <p></p>
+                        <input id="email" type="text" placeholder="Nhập Email của bạn">
+                    </div>
+                </div>
+                <div class="login_col">
+                    <div class="login_main">
+                        <label>Mật khẩu</label>
+                        <p></p>
+                        <input id="password" type="password" placeholder="Nhập mật khẩu của bạn">
+                    </div>
+                </div>
+                <div class="login_col">
+                    <div class="login_main">
+                        <div class="login_main_bottom">
+                            <p>Bạn quên mật khẩu? Lấy lại mật khẩu</p>
+                            <a id="open_popup_send_email" href="#">Tại đây</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_col">
+                    <div class="login_main">
+                        <div class="login_main_bottom">
+                            <button type="submit" id="login_submit" class="button">
+                                <span>Đăng Nhập</span>
+                            </button>
+                            <span>Bạn chưa có tài khoản?</span>
+                            <a href="register.html">Đăng ký</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_col">
+                    <div class="login_main">
+                        <div class="login_main_fire">
+                            <a id="login_via_fb" href="#" class="login_fire">
+                                <img src="https://static.smb.foolab.tech/images/471579c6eb194f569e0d38d3eab5e382.jpg" alt="login facebook">
+                                <span>Facebook</span>
+                            </a>
+                            <a id="login_via_gg" href="#" class="login_fire">
+                                <img src="https://file.hstatic.net/1000187248/file/icon_google_389d33cd8f004048a6a562f04b2de83f.png" alt="login google">
+                                <span>Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End: Slideshow -->
     </div>
@@ -74,9 +106,9 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" style="padding: 8px;text-align: center;"><img class="img-fluid" src="assets/img/flash.png"></div>
+                <!--div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" style="padding: 8px;text-align: center;"><img class="img-fluid" src="assets/img/flash.png"></div-->
             </div>
-            <div class="row row-cols-sm-2">
+            <!--div class="row row-cols-sm-2">
                 <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" style="padding: 8px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/quan.png" style="box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.15);"></a></div>
                 <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true"
                     style="padding: 8px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/ao.png" style="box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.14);"></a></div>
@@ -84,55 +116,16 @@
                     style="padding: 8px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/giaydep.png" style="box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.15);"></a></div>
                 <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true"
                     style="padding: 8px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/phukien.png" style="box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.15);"></a></div>
-            </div>
+            </div-->
         </div>
     </div>
     <!-- End: 2 Rows 1+4 Columns -->
-    <h1 style="font-size: 30px;padding: 8px;text-align: center;margin: 16PX;">MỚI CẬP NHẬT</h1>
+    <!--h1 style="font-size: 30px;padding: 8px;text-align: center;margin: 16PX;">MỚI CẬP NHẬT</h1-->
     <!-- Start: 1 Row 4 Columns -->
     <div>
         <div class="container">
             <div class="row row-cols-sm-2">
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/news.png"></a>
-                    <p>350.000VND</p>
-                    <p>Badhabit</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/rabbitMid-autmn.png"></a>
-                    <p>350.000VND</p>
-                    <p>Rabbit Mid-Autmn</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-Rabbit-n-Friend-Tee320.png"></a>
-                    <p>320.000VND</p>
-                    <p>Rabbit n Friend-Tee</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-Rabbit-n-Homies320.png"></a>
-                    <p>320.000VND</p>
-                    <p>Rabbit n Homies</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-Rabbit-world320.png"></a>
-                    <p>320.000VND</p>
-                    <p>Rabbit World</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-RabbitInsedeOut320.png"></a>
-                    <p>320.000VND</p>
-                    <p>Rabbit Insede Out</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-RabbitPurpleHell350.png"></a>
-                    <p>350.000VND</p>
-                    <p>Rabbit Purple Hell</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-RabbitToy320.png"></a>
-                    <p>320.000VND</p>
-                    <p>Rabbit Toy</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-TamagotchiJacket-550.png"></a>
-                    <p>550.000VND</p>
-                    <p>Tamagotchi Jacket</p>
-                </div>
-                <div class="col-md-3 text-center" style="text-align: center;padding: 2px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="swing" style="width: 200px;height: 200px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.15);" src="assets/img/Ao-Eater320.png"></a>
-                    <p>320.000VND</p>
-                    <p>Rabbit Eater</p>
-                </div>
+                
             </div>
         </div>
     </div>
